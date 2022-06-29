@@ -5,22 +5,15 @@ import Cake from "./assent/cake.png";
 import Pizza from "./assent/pizza.png";
 import Batido from "./assent/peanut banana.png";
 import Colher from "./assent/img about.png";
-import { createGlobalStyle } from "styled-components";
-
-const GlobalStyle = createGlobalStyle`
-body{
-  margin:0;
-  padding:0;
-  border:0;
-  background-color: white;
-}
-`;
+import Face from "./assent/Facebook Ellipse.svg";
+import Insta from "./assent/Instagram Ellipse.svg";
+import Tw from "./assent/Twitter ellipse.svg";
+import Pint from "./assent/Pinterest Ellipse.svg";
 export default class App extends React.Component {
   render() {
     return (
-      <>
+      <body>
         <header>
-          <GlobalStyle />
           <img src={Title} alt="" />
           <ul>
             <li>ABOUT</li>
@@ -74,8 +67,34 @@ export default class App extends React.Component {
               </p>
             </div>
           </section>
+          <div className="subs">
+          <h2>SUBSCRIBE</h2>
+          <p>Sign up for newsletter</p>
+          <input type="text" placeholder="Your Email" />
+          <button className="send">SUBMIT</button>
+        </div>
         </main>
-      </>
+        <footer>
+        <div className="rede">
+          <img src={Insta} alt="" />
+          <img src={Tw} alt="" />
+          <img src={Face} alt="" />
+          <img src={Pint} alt="" />
+        </div>
+        <ul>
+            <li>ABOUT</li>
+            <li>RECIPES</li>
+            <li>SUBSCRIBE</li>
+          </ul>
+        <div className="ref">
+          <p>
+            Layout produzido por Vai na Web para fins exclusivamente
+            educacionais. Referência:
+            https://br.pinterest.com/pin/AVuDlMAl4GsQiM6nijH9YbG9bsNKpompSEOEHzig6GJ58AnUtMkSy7k/
+          </p>
+        </div>
+      </footer>
+      </body>
     );
   }
 }
