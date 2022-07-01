@@ -14,12 +14,14 @@ export default class App extends React.Component {
     return (
       <body>
         <header>
+          <div className="nav">
           <img src={Title} alt="" />
           <ul>
             <li>ABOUT</li>
             <li>RECIPES</li>
             <li>SUBSCRIBE</li>
           </ul>
+          </div>
           <h1 className="Titulo">RECIPES</h1>
         </header>
         <main>
@@ -53,7 +55,7 @@ export default class App extends React.Component {
             <div className="sobre">
               <h2 className="subt">ABOUT</h2>
               <div className="subline"></div>
-              <p>
+              <p className="desc">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
                 tincidunt, tortor nec rhoncus dictum, lorem massa tempus sem, eu
                 tincidunt libero velit sit amet velit. Nunc in euismod urna.
@@ -81,11 +83,13 @@ export default class App extends React.Component {
           <img src={Face} alt="" />
           <img src={Pint} alt="" />
         </div>
-        <ul>
+        <nav>
+         <ul className="footer-list">
             <li>ABOUT</li>
             <li>RECIPES</li>
             <li>SUBSCRIBE</li>
           </ul>
+        </nav>
         <div className="ref">
           <p>
             Layout produzido por Vai na Web para fins exclusivamente
